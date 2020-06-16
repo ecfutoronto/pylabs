@@ -1,3 +1,7 @@
+'''
+adding random comments
+'''
+
 
 def above_average(elems):
     average = sum(elems) / len(elems)
