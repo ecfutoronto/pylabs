@@ -2,6 +2,12 @@
 adding random comments
 '''
 
+def DecimalToBinary(num): 
+      
+    if num > 1: 
+        DecimalToBinary(num // 2) 
+    print(num % 2, end = '') 
+
 def caesar(plainText, shift): 
 
     for ch in plainText:
