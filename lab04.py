@@ -8,6 +8,9 @@ def DecimalToBinary(num):
         DecimalToBinary(num // 2) 
     print(num % 2, end = '') 
 
+def decimalToBinary(n):  
+    return bin(n).replace("0b", "")  
+
 def caesar(plainText, shift): 
 
     for ch in plainText:
