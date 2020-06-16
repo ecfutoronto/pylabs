@@ -32,3 +32,7 @@ def longest_common_substring(text1, text2):
 if __name__ == "__main__":
     print(longest_without_repeat("geeksforgeeks"))
     print(longest_common_substring("abcdxyz", "xyzabcd"))
+
+def file_read(fname):
+    txt = open(fname)
+    print(txt.read())
