@@ -2,6 +2,21 @@
 adding random comments
 '''
 
+def caesar(plainText, shift): 
+
+    for ch in plainText:
+        if ch.isalpha():
+            stayInAlphabet = ord(ch) + shift 
+            if stayInAlphabet > ord('z'):
+                stayInAlphabet -= 26
+            finalLetter = chr(stayInAlphabet)
+        cipherText = ""
+        cipherText += finalLetter
+
+    print "Your ciphertext is: ", cipherText
+
+    return cipherText
+
 
 def above_average(elems):
     average = sum(elems) / len(elems)
